@@ -15,7 +15,6 @@ import static org.assertj.core.api.Assertions.*;
 public class ConfigurationSingletonTest {
 
     @Test
-    @DisplayName("")
     public void configurationTest() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
@@ -35,7 +34,6 @@ public class ConfigurationSingletonTest {
     }
 
     @Test
-    @DisplayName("")
     public void configurationDeep() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         AppConfig bean = ac.getBean(AppConfig.class);
